@@ -11,13 +11,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className='font-bold text-base font-sans sticky z-1 top-0'> //wrapper
       <>
         <nav className={styles.navBar}>
-          <div className={styles.hamburger} onClick={sidebarToggle}>
-            <span className={styles.bar}></span>
-            <span className={styles.bar}></span>
-            <span className={styles.bar}></span>
+          <div className='hidden' onClick={sidebarToggle}>//hamburger
+            <span className='block w-6 h-1 my-1.25 mx-auto'></span>//bar
+            <span className='block w-6 h-1 my-1.25 mx-auto'></span>
+            <span className='block w-6 h-1 my-1.25 mx-auto'></span>
           </div>
           <div className={styles.navBarLogin}>
             <a
@@ -40,8 +40,8 @@ const Navbar = () => {
             className={`${styles.navBarMenu} ${toggle ? `${styles.active}` : ''
               }`}
           >
-            <li className={styles.navBarLogoLi} >
-              <a href="https://github.com/login/oauth/authorize?client_id=23c78f66ab7964e5ef97">
+            <li className='float-left py-3 px-5'>//navBarLogoLi
+              <a className='m-0 block rounded-lg text-white text-center p-0 no-underline' href="https://github.com/login/oauth/authorize?client_id=23c78f66ab7964e5ef97">
                 <Image
                   src="/images/Real-Dev-Squad@1x.png"
                   alt="home nav logo"
@@ -50,18 +50,17 @@ const Navbar = () => {
                 />
               </a>
             </li>
-            <li class={styles.homeTab}><a href="http://realdevsquad.com/">Home</a></li>
-            <li><a href="https://welcome.realdevsquad.com/">Welcome</a></li>
-            <li><a href="https://www.realdevsquad.com/events">Events</a></li>
-            <li><a href="https://members.realdevsquad.com/">Members</a></li>
-            <li><a href="https://crypto.realdevsquad.com/">Crypto</a></li>
-            <li><a href="https://status.realdevsquad.com/">Status</a></li>
-            <li className={styles.navBarLoginLi}>
-              <a
-                className={styles.btnLogin}
+            <li className='float-left hidden'><a href="http://realdevsquad.com/">Home</a></li>//homeTab
+            <li className='float-left'><a className='m-2.5 block rounded-lg text-white text-center py-5 px-4 no-underline' href="https://welcome.realdevsquad.com/">Welcome</a></li>
+            <li className='float-left'><a className='m-2.5 block rounded-lg text-white text-center py-5 px-4 no-underline' href="https://www.realdevsquad.com/events">Events</a></li>
+            <li className='float-left'><a className='m-2.5 block rounded-lg text-white text-center py-5 px-4 no-underline' href="https://members.realdevsquad.com/">Members</a></li>
+            <li className='float-left'><a className='m-2.5 block rounded-lg text-white text-center py-5 px-4 no-underline' href="https://crypto.realdevsquad.com/">Crypto</a></li>
+            <li className='float-left'><a className='m-2.5 block rounded-lg text-white text-center py-5 px-4 no-underline' href="https://status.realdevsquad.com/">Status</a></li>
+            <li className='float-left hidden'>//navBarLoginLi
+              <a className='m-5.5 block rounded-lg text-white text-center p-0 no-underline'
                 href="https://my.realdevsquad.com/profile"
-              >
-                <button className={styles.btnLoginText}>
+              >//btnLogin
+                <button className='rounded-md p-1 bg-purple-900 text-white cursor-pointer border-2 border-solid border-white flex justify-around'>//btnLoginText
                   Sign In With GitHub
                   <Image
                     className={styles.githubLogo}
@@ -72,10 +71,10 @@ const Navbar = () => {
                   />
                 </button>
               </a>
-              <div class={styles.userGreet}>
+              {/* <div className='hidden text-white m-6 cursor-pointer'>//userGreet
                 <div class="styles.userGreetMsg">Hello, User!</div>
                 <img class="styles.userProfilePic" />
-              </div>
+              </div> */}
             </li>
           </ul>
         </nav>

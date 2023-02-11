@@ -5,6 +5,7 @@
   z-index: 1;
   top: 0px;
 }
+// className='font-bold text-base font-sans sticky z-1 top-0'
 
 .navBar li a {
   margin: 10px;
@@ -23,12 +24,13 @@
 }
 // className='float-left'
 
+//doubt
 .navBar li a:hover {
   color: #49a82e;
 }
 // className='text-green-600'
 
-
+//doubt
 .navBarMenu {
   list-style-type: none;
   margin: 0;
@@ -37,6 +39,7 @@
   background-color: #1d1283;
 }
 // className='list-none m-0 p-0 overflow-hidden bg-purple-900'
+
 
 .navBarLogoLi {
   padding: 12px 20px;
@@ -86,12 +89,15 @@
 }
 //className='hidden text-white m-6 cursor-pointer'
 
+
+//doubt
 .navBarLoginLi .userGreet a {
   text-decoration: none;
   color: #ffffff;
   padding: 0;
 }
 //className='no-underline text-white p-0'
+
 
 .userProfilePic {
   width: 32px;
@@ -122,7 +128,7 @@
 .hamburger {
   display: none;
 }
-//className='display: none;'
+//className='hidden'
 
 .bar {
   display: block;
@@ -133,6 +139,8 @@
 }
 //className='block w-6 h-1 my-1.25 mx-auto'
 
+
+//doubt
 .githubLogo {
   margin-left: 4px;
   border-radius: 50%; //doubt
@@ -141,27 +149,6 @@
 }
 //className='ml-1 '
 
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 5px;
-}
-//className='flex justify-center items-center flex-wrap pt-1'
-
-.link {
-  padding: 10px;
-  margin-top: 2px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #041484;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-//className='p-2 mt-0 no-underline font-bold text-blue-900 cursor-pointer bg-none border-none'
 
 .active {
   color: #e30464;
