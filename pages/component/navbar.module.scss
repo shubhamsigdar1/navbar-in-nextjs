@@ -1,0 +1,261 @@
+
+.wrapper {
+  font: 700 16px 'Roboto', sans-serif;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+}
+
+.navBar li a {
+  margin: 10px;
+  display: block;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 19px 16px;
+  text-decoration: none;
+}
+// className='m-2.5 block rounded-lg text-white text-center py-5 px-4 no-underline'
+
+
+.navBar li {
+  float: left;
+}
+// className='float-left'
+
+.navBar li a:hover {
+  color: #49a82e;
+}
+// className='text-green-600'
+
+
+.navBarMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1d1283;
+}
+// className='list-none m-0 p-0 overflow-hidden bg-purple-900'
+
+.navBarLogoLi {
+  padding: 12px 20px;
+}
+// className='py-3 px-5'
+
+.navBar li.navBarLogoLi a {
+  margin: 0px;
+  padding: 0px;
+}
+// className='m-0 p-0'
+
+.navBar li.navBarLoginLi {
+  float: right;
+}
+// className='float-right'
+
+.navBar li.navBarLoginLi .btnLogin {
+  padding: 0px;
+  margin: 22px;
+}
+//className='p-0 m-5.5'
+
+.navBarLogin,
+.homeTab {
+  display: none;
+}
+//className='hidden'
+
+.btnLoginText {
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #1d1283;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-around;
+}
+//className='rounded-md p-1 bg-purple-900 text-white cursor-pointer border-2 border-solid border-white flex justify-around'
+
+.userGreet {
+  display: none;
+  color:  #ffffff;
+  margin: 23px;
+  cursor: pointer;
+}
+//className='hidden text-white m-6 cursor-pointer'
+
+.navBarLoginLi .userGreet a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0;
+}
+//className='no-underline text-white p-0'
+
+.userProfilePic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; //doubt
+  display: inline;
+  vertical-align: middle;
+}
+//className='w-8 h-8'
+
+
+.userGreetMsg {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+}
+//className='inline align-middle mr-2 text-white'
+
+.navBar li a.activeTab {
+  color: #49a82e;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+//className='text-green-600 underline decoration-3 underline-offset-10'
+
+.hamburger {
+  display: none;
+}
+//className='display: none;'
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+}
+//className='block w-6 h-1 my-1.25 mx-auto'
+
+.githubLogo {
+  margin-left: 4px;
+  border-radius: 50%; //doubt
+  height: 15px;
+  width: 15px;
+}
+//className='ml-1 '
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+//className='flex justify-center items-center flex-wrap pt-1'
+
+.link {
+  padding: 10px;
+  margin-top: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #041484;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+//className='p-2 mt-0 no-underline font-bold text-blue-900 cursor-pointer bg-none border-none'
+
+.active {
+  color: #e30464;
+}
+//className='text-pink-700'
+.homes {
+  display: none;
+}
+//className='hidden'
+
+
+@media screen and (max-width: 970px) {
+  .navBar {
+    background: #1d1283;
+  }
+  //className='bg-purple-900'
+
+  .homes {
+    display: block;
+  }
+  //className='block'
+
+  .hamburger {
+    height: 73px;
+    width: 73px;
+    padding: 18px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+  //className='h-20 w-20 p-4 inline-block cursor-pointer text-xl text-white'
+
+  .icon {
+    height: 32px;
+  }
+  //className='h-8'
+
+  .navBarMenu {
+    background: white;
+    display: none;
+    width: 100%;
+    padding: 10px 0px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  }
+   //className='bg-white hidden w-full py-2.5 px-0'
+
+  .navBarMenu.active,
+  .homeTab {
+    display: block;
+  }
+  //className='block'
+
+  .navBar li a {
+    padding: 10px 40px;
+    text-align: left;
+    color: #1d1283;
+  }
+  //className:'py-2.5 px-10'
+
+  .navBarLogin {
+    display: block;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+//className:'block m-5 absolute top-0 right-0'
+
+
+  .navBarLoginLi,
+  .navBarLogoLi {
+    display: none;
+  }
+  //className:'hidden'
+
+  .navBar li a.activeTab {
+    text-decoration: none;
+  }
+  //className:'no-underline'
+
+  .navBar li {
+    float: none;
+  }
+  //className:'float-none'
+
+  .mainBanner,
+  .logoImg {
+    margin-top: 40px;
+  }
+  //className:'mt-10'
+
+  .userGreet {
+    margin: 0px;
+  }
+  //className:'m-0'
+}
